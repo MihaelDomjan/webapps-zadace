@@ -1,5 +1,8 @@
 //Napiši funkciju koja pretvara HRK u EUR
-let hrkUeur = (kn) => kn / 7.5
+const KUNE_VALUE = 100;
 
-console.log(hrkUeur(276), "EUR")
-console.log(hrkUeur(43), "EUR")
+const hrkToEur = (kune) => {
+	return kune / 7.53;
+};
+
+console.log(`${KUNE_VALUE}HRK iznosi ${hrkToEur(KUNE_VALUE).toFixed(2)}€`);
